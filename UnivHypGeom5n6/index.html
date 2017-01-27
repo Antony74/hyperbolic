@@ -6,68 +6,41 @@
   <!-- uncomment lines below to include extra p5 libraries --> 
   <!--<script language="javascript" src="libraries/p5.dom.js"></script>--> 
   <!--<script language="javascript" src="libraries/p5.sound.js"></script>--> 
-  <script language="javascript" type="text/javascript" src="UnivHypGeom6.js"></script> 
+  <script language="javascript" type="text/javascript" src="UnivHypGeom5n6.js"></script> 
   <!-- OK, YOU CAN MAKE CHANGES BELOW THIS LINE AGAIN --> 
-
-  <title>Some lecture notes</title>
-  
-  <script type="text/javascript" async="" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
-
+  <title>Some lecture notes</title> 
+  <script type="text/javascript" async="" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+
   </script> 
-    <style>
-        body {
-            margin: 30px;
-            background-color: beige;
-        }
-        
-        p {
-          font-size: 150%;
-        }
+  <style>
+        body {
+            margin: 30px;
+            background-color: beige;
+        }
+        
+        p {
+          font-size: 150%;
+        }
     </style> 
  </head> 
- <body>
-
-  <h1>Some lecture notes</h1>
-
-  A few notes I took from lectures
-  <a href="https://youtu.be/YDGUnGGkaTs">UnivHypGeom5</A> and
-  <A href="https://youtu.be/XomxP2pxYnw">UnivHypGeom6.</A>  Just enough to be able to construct the interactive hyperbolic diagram below.
-  
-  <hr>
-  
-  <h1>Point</h1>
-  <p>
-    \( A \equiv [x,y] \)
-  </p>
-  
-  <h1>Line</h1>
-  <p>
-    \( \ell = [a:b:c] \) representing equation \( ax + by = c \)
-  </p>
-
-  <h1>Point on two lines theorem:</h1>
-  <p>
-    If the lines \( \ell_1 = (a_1:b_1:c_1) \) and \( \ell_2 = (a_2:b_2:c_2) \) are not parallel, then there is a unique point A which lies on them both.<br><br>
-    \( A = \ell_1 \ell_2 = [ {b_2 c_1 - b_1 c2 \over a_1 b_2 - a_2 b_1}, {a_1 c_2 - a_2 c1 \over a_1 b_2 - a_2 b_1} ] \)
-  </p>
-
-  <hr>
-
-  <h1>Duality in coordinates theorem:</h1>
-  <p>
-    If \( a \equiv [ x_0, y_0 ] \) then \( a^\perp = ( x_0 : y_0 : 1 ) \)
-  </p>
-
-  <h1>Quadrance in coordinates theorem:</h1>
-  <p>
-      If \( a_1 \equiv [ x_1, y_1 ] \) and \( a_2 \equiv [ x_2, y_2 ] \) then 
-      \( q(a_1, a_2) = 1 - {(x_1 x_2 + y_1 y_2 - 1)^2 \over (x_1^2 + y_1^2 - 1)(x_2^2 + y_2 ^ 2 - 1)} \)
-  </p>
-  
-  <hr>
-
-<h1>Interactive hyperbolic diagram:</h1>
-  
+ <body> 
+  <h1>Some lecture notes</h1> A few notes I took from lectures 
+  <a href="https://youtu.be/YDGUnGGkaTs">UnivHypGeom5</a> and 
+  <a href="https://youtu.be/XomxP2pxYnw">UnivHypGeom6.</a> Just enough to be able to construct the interactive hyperbolic diagram below. 
+  <hr /> 
+  <h1>Point</h1> 
+  <p> \( A \equiv [x,y] \) </p> 
+  <h1>Line</h1> 
+  <p> \( \ell = [a:b:c] \) representing equation \( ax + by = c \) </p> 
+  <h1>Point on two lines theorem:</h1> 
+  <p> If the lines \( \ell_1 = (a_1:b_1:c_1) \) and \( \ell_2 = (a_2:b_2:c_2) \) are not parallel, then there is a unique point A which lies on them both.<br /><br /> \( A = \ell_1 \ell_2 = [ {b_2 c_1 - b_1 c2 \over a_1 b_2 - a_2 b_1}, {a_1 c_2 - a_2 c1 \over a_1 b_2 - a_2 b_1} ] \) </p> 
+  <hr /> 
+  <h1>Duality in coordinates theorem:</h1> 
+  <p> If \( a \equiv [ x_0, y_0 ] \) then \( a^\perp = ( x_0 : y_0 : 1 ) \) </p> 
+  <h1>Quadrance in coordinates theorem:</h1> 
+  <p> If \( a_1 \equiv [ x_1, y_1 ] \) and \( a_2 \equiv [ x_2, y_2 ] \) then \( q(a_1, a_2) = 1 - {(x_1 x_2 + y_1 y_2 - 1)^2 \over (x_1^2 + y_1^2 - 1)(x_2^2 + y_2 ^ 2 - 1)} \) </p> 
+  <hr /> 
+  <h1>Interactive hyperbolic diagram:</h1> 
   <div id="canvasParent"> 
   </div>  
  </body>
